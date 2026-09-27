@@ -4,7 +4,12 @@ import CoreText
 import Foundation
 import PDFKit
 
-let outputURL = URL(fileURLWithPath: "assets/profile-ja.pdf")
+let scriptURL = URL(fileURLWithPath: #filePath)
+let projectURL = scriptURL.deletingLastPathComponent()
+let assetURL = projectURL.appendingPathComponent("assets", isDirectory: true)
+try FileManager.default.createDirectory(at: assetURL, withIntermediateDirectories: true)
+let outputURL = assetURL.appendingPathComponent("profile-ja.pdf")
+
 let content = """
 TTA MANAGEMENT
 詳細プロフィール
