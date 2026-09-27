@@ -8,7 +8,7 @@ let scriptURL = URL(fileURLWithPath: #filePath)
 let projectURL = scriptURL.deletingLastPathComponent()
 let assetURL = projectURL.appendingPathComponent("assets", isDirectory: true)
 try FileManager.default.createDirectory(at: assetURL, withIntermediateDirectories: true)
-let outputURL = assetURL.appendingPathComponent("profile-ja.pdf")
+let outputURL = assetURL.appendingPathComponent("tta-profile2026.pdf")
 
 let content = """
 TTA MANAGEMENT
@@ -59,7 +59,9 @@ YPS COBOLの基幹システムをオープン化するプロジェクトに、�
 
 現場の実務とマネジメントの双方を経験しているからこそ、経営層が求める視点と現場が抱えている課題の両方を理解しながらプロジェクトを推進できます。周囲から「いつもポジティブだ」「鉄人みたいだ」と言われることがあります。難しい状況でも、まずできることを見つけ、問題を必要以上に悲観せず一つずつ前に進める姿勢を大切にしています。
 
-誠実さと正直さを仕事の基本姿勢とし、短期的な成果だけではなく、長期的に信頼していただける関係を築くことを重視しています。
+誠実さと正直さを仕事の基本姿勢とし、事実を整理して関係者と合意をつくりながら、短期的な成果と長期的な信頼を両立していくことを大切にしています。
+
+誠実さと正直さを土台に、事実に基づく判断と丁寧な関係づくりを重ね、短期の成果だけでなく長期の信頼を築いています。
 
 これから取り組みたいこと | AI × PM
 これまで培ってきたプロジェクトマネジメントの経験にAIを組み合わせ、プロジェクト運営そのものをより効率的・高度にしていきたいと考えています。目指しているのは、単純に人を減らすことではありません。
